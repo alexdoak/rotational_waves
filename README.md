@@ -26,6 +26,7 @@ de - Derivatives of variables
 li - Lists, data storage along bifurcation curves
 
 
+***What's in fe***
 
 Note that in fe, there are a number of features that do not concern the paper. In this sense, please set:
 

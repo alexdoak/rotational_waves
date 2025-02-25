@@ -1,6 +1,6 @@
 clear all
 
-PATH_TO_FOLDER = '/home/adoak/Documents/MATLAB/Vorticity_new';
+PATH_TO_FOLDER = '';
 addpath([PATH_TO_FOLDER '/auxx_run'])
 addpath([PATH_TO_FOLDER '/auxx_load'])
 addpath([PATH_TO_FOLDER '/auxx_plot'])

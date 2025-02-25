@@ -1,0 +1,12 @@
+% ----------------------------------------------------------------------- %
+%                Create new lists to store data                           %
+% ----------------------------------------------------------------------- %
+function [li] = aux_newlists(a,pa,un)
+
+li.a_list = zeros(1,numel(a));
+li.qint_list = [];
+li.amp_list = [];
+li.M_list = [];
+li.N_list=[];
+
+

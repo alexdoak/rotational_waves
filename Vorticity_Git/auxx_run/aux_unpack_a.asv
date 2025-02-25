@@ -1,0 +1,37 @@
+function [un,pa,ja] = aux_unpack_a(a,pa,un,fe,ja)
+
+
+MN=pa.M*pa.N;
+un.psi = a(1:MN);
+
+if fe.Freesurface==1 
+    un.y = a(MN+1:2*MN);
+    un.B = a(2*MN+1);
+
+    if isequal(fe.Fix,'Q & amplitude')==1
+    un.d=a(2*MN+2);
+    else
+    un.Q = a(2*MN+2);
+    end
+    
+    if  fe.Fixwavelength==1 & fe.Fixdepth==1 &  fe.Freesurface==1
+        pa.L=a(2*MN+3);
+        ja.extra = 2*MN+1:2*MN+3;
+    else
+        ja.extra = 2*MN+1:2*MN+2;
+    end
+
+    un.c = un.Q/pa.H;
+
+
+end
+
+if fe.Freesurface==0
+    un.Q = a(MN+1);
+ 
+
+
+    ja.extra = MN+1;
+    un.c = un.Q/pa.H;
+end
+

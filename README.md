@@ -1,4 +1,7 @@
 # rotational_waves
+
+TO FINISH. In the meantime, if you do want to use these codes, do not hesitate to email. 
+
 Codes to compute free-surface waves with arbitrary vorticity. This is the code used in the paper https://arxiv.org/abs/2502.18388
 
 There are a few notation changes from the paper, in particular 
